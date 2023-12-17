@@ -1,0 +1,31 @@
+Linear regression is a statistical method used for modeling the relationship between a dependent variable and one or more independent variables. It assumes that the relationship between the variables can be approximated by a linear equation. The goal of linear regression is to find the best-fit line that minimizes the difference between the observed values and the values predicted by the linear model.
+
+Here is the basic form of a simple linear regression equation with one independent variable:
+
+\[ Y = \beta_0 + \beta_1X + \epsilon \]
+
+- \( Y \) is the dependent variable.
+- \( X \) is the independent variable.
+- \( \beta_0 \) is the y-intercept (constant term).
+- \( \beta_1 \) is the slope of the line.
+- \( \epsilon \) represents the error term, which accounts for unobserved factors affecting the dependent variable.
+
+Before applying linear regression, several assumptions must be satisfied for the model to be valid. These assumptions include:
+
+1. **Linearity:** The relationship between the independent and dependent variables should be linear. The model assumes that changes in the dependent variable are proportional to changes in the independent variable.
+
+2. **Independence:** Observations should be independent of each other. The value of the dependent variable for one observation should not be influenced by the value of the dependent variable for any other observation.
+
+3. **Homoscedasticity:** The variance of the errors (residuals) should be constant across all levels of the independent variable. In other words, the spread of the residuals should remain roughly the same as the independent variable increases.
+
+4. **Normality of Residuals:** The residuals (the differences between observed and predicted values) should be normally distributed. This assumption is important for making statistical inferences.
+
+5. **No Perfect Multicollinearity:** In the case of multiple independent variables, there should be no perfect linear relationship among them. High correlation between independent variables can lead to problems in estimating individual coefficients.
+
+6. **No Autocorrelation of Residuals:** The residuals should not exhibit a pattern when plotted against time or the order of observations. Autocorrelation can indicate that there is information in the data that is not captured by the model.
+
+7. **Additivity:** The effect of changes in an independent variable on the dependent variable is consistent regardless of the values of other variables.
+
+8. **Normality of Variables (optional):** While not a strict assumption, normality of the variables can be helpful for making statistical inferences and constructing confidence intervals.
+
+It's important to check these assumptions before relying on the results of a linear regression model. Violations of these assumptions might lead to biased or inefficient estimates, and the model may not accurately represent the underlying relationships in the data. Various diagnostic tools and statistical tests can be used to assess the validity of these assumptions.
